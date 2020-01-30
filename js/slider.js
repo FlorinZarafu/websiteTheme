@@ -1,7 +1,6 @@
 const slides = document.querySelector(".slider").children;
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-console.log(slides, prev, next);
 let index = 0;
 prev.addEventListener("click", function() {
   prevSlide();
