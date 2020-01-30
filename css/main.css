@@ -1,0 +1,262 @@
+/* styles for body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+/* general styles */
+/* links styles */
+a,
+a:hover {
+  text-decoration: none;
+}
+/*link styles */
+.big-link {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.big-link:hover {
+  color: #00bcd4;
+  transition: 0.5s;
+}
+/* icons styles */
+.big-icon {
+  font-size: 2rem;
+  color: #00bcd4;
+}
+/* buttons style */
+.big-btn {
+  color: #fff;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 2px solid #00bcd4;
+}
+.big-btn:hover {
+  background: #00bcd4;
+  transition: 0.5s all;
+  color: #fff;
+}
+/* home section styles */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+/* nav styles */
+.nav {
+  padding: 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  font-size: 1.8rem;
+}
+/* Logo styles */
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+.logo:hover {
+  color: #fff;
+}
+/* close open nav styles */
+.open-nav i,
+.close-nav i {
+  color: #fff;
+}
+.open-nav i:hover,
+.close-nav i:hover {
+  color: #00bcd4;
+  transition: 0.5s all ease;
+}
+/* nav link list styles */
+.nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: rgba(32, 34, 48, 0.8);
+  pointer-events: none;
+  opacity: 0;
+}
+/* nav list item styles */
+.nav-list-items {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  transform: translateY(-50px);
+}
+/* style for showing nav-list */
+.show-nav-list {
+  z-index: 5;
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.2s all ease-in-out;
+}
+/* class style for transitoning links */
+.nav-list-items-origin {
+  transform: translateY(0px);
+  transition: 0.5s all ease-in-out;
+}
+/* style for close nav */
+.close-nav {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.2rem;
+  pointer-events: all;
+  z-index: 5;
+}
+/* style for active nav link */
+.active {
+  color: #00bcd4;
+}
+/* style for slider */
+.slider {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: 1;
+  animation: zoom 20s ease-in-out infinite;
+  display: none;
+}
+.slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 34, 48, 0.6);
+  z-index: 2;
+}
+.slide.active {
+  display: flex;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.caption-first-slide {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  bottom: 10rem;
+  padding: 1rem;
+  z-index: 3;
+}
+.caption-first-slide h3,
+.caption-first-slide h2,
+.caption-first-slide p {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform-origin: left;
+}
+.top h3 {
+  animation: left 2s ease forwards;
+}
+.top h2 {
+  animation: right 2s ease forwards;
+}
+.middle h2:first-child {
+  animation: left 2s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+.middle h2:nth-child(2) {
+  animation: right 2s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+.middle h2:nth-child(3) {
+  animation: right 2s ease forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+}
+.caption-first-slide .bottom p {
+  letter-spacing: 0;
+  margin: 0;
+  transform: translateY(100px) rotate(90deg);
+  opacity: 0;
+  animation: rotate 2s ease forwards;
+  animation-delay: 1.5s;
+}
+.caption-first-slide .top h3,
+.caption-first-slide .middle h2 {
+  color: #00bcd4;
+}
+.caption-first-slide .bottom {
+  margin-bottom: 1rem;
+}
+.caption-first-slide a {
+  display: inline-block;
+  transform: translateY(100px) rotate(90deg);
+  opacity: 0;
+  animation: rotate 2s ease forwards;
+  transform-origin: left;
+  animation-delay: 1.8s;
+}
+@keyframes rotate {
+  0% {
+    transform: translateY(50px) rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.section {
+  position: relative;
+}
