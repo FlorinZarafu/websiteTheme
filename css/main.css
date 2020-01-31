@@ -1,4 +1,7 @@
 /* styles for body */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -170,7 +173,7 @@ header {
   z-index: 5;
 }
 /* style for active nav link */
-.active {
+.nav-link.active-link {
   color: #00bcd4;
 }
 /* style for slider */
@@ -187,7 +190,6 @@ header {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
   z-index: 1;
   animation: zoom 20s ease-in-out infinite;
   display: none;
@@ -488,7 +490,7 @@ header {
 .about-right-content {
   position: relative;
   background: #23252e;
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
   width: 100%;
 }
 .about-right span {
@@ -577,7 +579,7 @@ header {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
 }
 .classes-content:hover i,
 .classes-content:hover h4,
@@ -884,6 +886,7 @@ header {
   min-height: 100vh;
   background: url("../img/contact/image-1.jpg");
   background-size: cover;
+  background-position: 50% 50%;
 }
 #contact::after {
   content: "";
@@ -1022,6 +1025,9 @@ header {
   .contact-intro h3 {
     font-size: 1.3rem;
   }
+  .contact-detailes {
+    height: 100%;
+  }
   /* footer */
   .footer ul li {
     margin: 0 0.3rem;
@@ -1043,12 +1049,20 @@ header {
     width: 50%;
     right: 5%;
   }
+  /* regular-btn */
+  .regular-btn {
+    width: 70%;
+  }
   /* about section */
   .about-right img {
     width: 50%;
   }
   .about-right-content {
     width: 50%;
+  }
+  /* classes */
+  .classes-content {
+    padding: 1rem 2rem;
   }
   /* popular programs intro */
   .popular-programs-content {

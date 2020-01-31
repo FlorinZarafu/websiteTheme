@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gym Template</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
     <!-- font-awesome CDN -->
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <!-- start body  -->
-
 <body>
     <!-- start home section -->
     <header id="home">
@@ -39,19 +38,21 @@
                 <i class="fas fa-times big-icon"></i>
             </div>
             <ul class="nav-list-items">
-                <li class="nav-item"><a class="nav-link big-link active" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link big-link" href="">About</a></li>
-                <li class="nav-item"><a class="nav-link big-link" href="">Classes</a></li>
-                <li class="nav-item"><a class="nav-link big-link" href="">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link big-link" href="">Contact</a></li>
+                <li class="nav-item"><a class="nav-link big-link active-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link big-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link big-link" href="#classes">Classes</a></li>
+                <li class="nav-item"><a class="nav-link big-link" href="#popular-programs">Programs</a></li>
+                <li class="nav-item"><a class="nav-link big-link" href="#trainers">Trainers</a></li>
+                <li class="nav-item"><a class="nav-link big-link" href="#contact">Contact</a></li>
             </ul>
         </div>
         <!-- start slider -->
         <div class="p-0 container-fluid">
             <div class="col-12 slider">
                 <!-- start slide 1 -->
-                <div style="background: url('../img/slider/slide-1.jpg');background-size: cover;background-attachment: fixed;"
-                    class="slide active">
+                <div class="slide active">
+                    <img class="w-100 d-none d-md-block" src="./img/slider/slide-1.jpg" alt="">
+                    <img class="w-100 d-block d-md-none" src="./img/slider/slide-1-sm.jpg" alt="">
                     <!-- start slide 1 content -->
                     <div class="slide-container">
                         <div class="caption-first-slide">
@@ -82,8 +83,9 @@
                     </div>
                 </div>
                 <!-- start slide 2 -->
-                <div style="background: url('../img/slider/slide-2.jpg');background-size: cover;background-attachment: fixed;"
-                    class="slide">
+                <div class="slide">
+                    <img class="w-100 d-none d-md-block" src="./img/slider/slide-2.jpg" alt="">
+                    <img class="w-100 d-block d-md-none" src="./img/slider/slide-2-sm.jpg" alt="">
                     <!-- start slide 2 content -->
                     <div class="slide-container">
                         <div class="caption-second-slide">
@@ -524,5 +526,4 @@
     <script src="./js/slider.js"></script>
     <script src="./js/textAnimation.js"></script>
 </body>
-
 </html>
