@@ -873,6 +873,8 @@ header {
   padding: 0.3rem 0.5rem;
   font-size: 0.9rem;
   font-weight: 600;
+  width: 50%;
+  text-align: center;
 }
 /* contact section */
 #contact {
