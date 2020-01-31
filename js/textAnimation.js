@@ -23,8 +23,9 @@ const scrollAppearRight = () => {
   const aboutTopRightH3 = document.querySelector(".about-right-content h3");
   const aboutTopRightA = document.querySelector(".about-right-content a");
   const offerA = document.querySelector(".special-offer a");
+  const offer2A = document.querySelector(".special-offer-2 a");
   // creating an array with all the text elements
-  const array = [aboutTopRightH3, aboutTopRightA, offerA];
+  const array = [aboutTopRightH3, aboutTopRightA, offerA, offer2A];
   // for each element inside the array when the scroll is at his top add the animated class
   for (let i = 0; i < array.length; i++) {
     const positionAboutBig = array[i].getBoundingClientRect().top;
@@ -40,6 +41,9 @@ const scrollFadeIn = () => {
   // getting class refernce for the text
   const offerH2 = document.querySelector(".special-offer h2");
   const offerH4 = document.querySelector(".special-offer h4");
+  const ofer2H2 = document.querySelector(".special-offer-2 h2");
+  const ofer2H4 = document.querySelector(".special-offer-2 h4");
+  const ofer2P = document.querySelector(".special-offer-2 p");
   const trainingI = document.querySelectorAll(".classes-content");
   const programsI = document.querySelectorAll(".type-inner i");
   // creating an array with all the text elements
@@ -51,7 +55,10 @@ const scrollFadeIn = () => {
     trainingI[2],
     programsI[0],
     programsI[1],
-    programsI[2]
+    programsI[2],
+    ofer2H2,
+    ofer2H4,
+    ofer2P
   ];
   // for each element inside the array when the scroll is at his top add the animated class
   for (let i = 0; i < array.length; i++) {
