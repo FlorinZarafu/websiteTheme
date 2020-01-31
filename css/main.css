@@ -989,8 +989,9 @@ header {
 @media (min-width: 768px) {
   /* slider styles */
   .caption-first-slide {
-    width: 50%;
+    width: 100%;
     left: 5%;
+    bottom: 10%;
   }
   /* about styles */
   .about-right h3 {
@@ -1040,6 +1041,11 @@ header {
 }
 /* large screen style */
 @media (min-width: 992px) {
+  /* slider */
+  .caption-first-slide {
+    width: 50%;
+    bottom: 20%;
+  }
   /* slider controls */
   .controls .prev,
   .controls .next {
