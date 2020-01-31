@@ -795,6 +795,85 @@ header {
   color: #00bcd4;
   background: #fff;
 }
+/* trainer section style */
+.trainers-intro {
+  text-align: center;
+  padding: 3rem 0;
+}
+.trainers-intro h4 {
+  font-size: 1.4rem;
+}
+.trainers-intro h2 {
+  color: #00bcd4;
+}
+.trainers-intro p {
+  letter-spacing: 0;
+  padding: 0 1rem;
+  text-align: left;
+}
+/* trianer card */
+.trainer-card {
+  background: #f0f3f2;
+  padding-bottom: 3rem;
+  margin: 1rem 0;
+}
+.img-cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 188, 212, 0.6);
+  transform-origin: top;
+  transform: scaleY(0);
+}
+.trainer-card:hover .overlay {
+  transform: scaleY(1);
+  transition: 0.3s all ease-in-out;
+}
+.overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #fff;
+}
+.trainer-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.trainer-text h4 {
+  text-align: center;
+  padding: 2rem 0 0;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.trainer-text .small {
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 600;
+  color: #a4a5ae;
+}
+.trainer-text p {
+  letter-spacing: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem;
+}
+.trainer-text a {
+  color: #00bcd4;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 /* medium screen style */
 @media (min-width: 768px) {
   /* slider styles */
@@ -821,6 +900,9 @@ header {
   }
   .special-offer-2 a {
     margin: 0 1rem;
+  }
+  .trainers-intro p {
+    text-align: center;
   }
 }
 /* large screen style */
