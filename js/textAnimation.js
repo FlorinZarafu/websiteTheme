@@ -40,8 +40,9 @@ const scrollFadeIn = () => {
   // getting class refernce for the text
   const offerH2 = document.querySelector(".special-offer h2");
   const offerH4 = document.querySelector(".special-offer h4");
+  const trainingI = document.querySelectorAll(".classes-content");
   // creating an array with all the text elements
-  const array = [offerH2, offerH4];
+  const array = [offerH2, offerH4, trainingI[0], trainingI[1], trainingI[2]];
   // for each element inside the array when the scroll is at his top add the animated class
   for (let i = 0; i < array.length; i++) {
     const positionAboutBig = array[i].getBoundingClientRect().top;

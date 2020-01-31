@@ -57,6 +57,7 @@ a:hover {
   text-transform: uppercase;
   padding: 0.5rem 1rem;
   border: 2px solid #00bcd4;
+  border-radius: 0.2rem;
 }
 .big-btn:hover {
   background: #00bcd4;
@@ -73,6 +74,7 @@ a:hover {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 600;
+  border-radius: 0.2rem;
 }
 .regular-btn:hover {
   color: #00bcd4;
@@ -564,6 +566,48 @@ header {
   color: #00bcd4;
   background: #fff;
   transition: 0.4s all ease-in-out;
+}
+/* training classes style */
+.classes-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+.classes-content:hover i,
+.classes-content:hover h4,
+.classes-content:hover p,
+.classes-content:hover a {
+  color: #00bcd4;
+  transition: 0.5s all ease-in-out;
+}
+.classes-content:hover a {
+  background-color: #00bcd4;
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+.classes-content i {
+  font-size: 2.5rem;
+  color: #23252e;
+  margin-bottom: 1rem;
+}
+.classes-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+.classes-content p {
+  letter-spacing: 0;
+  font-size: 0.9rem;
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+.classes-content a {
+  color: #00bcd4;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 /* medium screen style */
 @media (min-width: 768px) {
